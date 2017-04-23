@@ -18,6 +18,7 @@
   with_first_found:
     - "{{ ansible_distribution }}.yml"
     - "{{ ansible_os_family }}.yml"
+    - "{{ ansible_lsb_id }}.yml"
 
 - name: Install required dependencies
   package:
