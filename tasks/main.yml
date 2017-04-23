@@ -25,6 +25,7 @@
     name: "{{ item }}"
     state: "present"
   with_items: "{{ required_packages }}"
+  ignore_errors: yes
 
 - name: Install pip
   easy_install: 
